@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>{{$store.state.count}}</h2>
-    <button @click="$store.commit('add')">+</button>
+    <button @click="$store.commit('add',2)">+</button>
     <button @click="$store.commit('reduce')">-</button>
   </div>
 </template>
