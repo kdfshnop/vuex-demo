@@ -16,7 +16,7 @@ const mutations = {
   }
 }
 // 从表面是获得的意思，可以把他看作在获取数据之前进行的一种再编辑,相当于对数据的一个过滤和加工;
-// 比如我们现在要对store.js文件中的count进行一个计算属性的操作，就是在它输出前，给它加上50.
+// 比如我们现在要对store.js文件中的count进行一个计算属性的操作，就是如果state.count发生变化,那么此时getters进行运算，否则缓存起来.
 const getters = {
   count: function (state) {
     state.count += 50
