@@ -27,6 +27,7 @@ export default {
     // }
     ...mapGetters(['count'])
   },
+  //mapMutations第一个参数可以添加组件名,...mapMutations('Count',['add','reduce']);
   methods: mapMutations(['add', 'reduce'])
 }
 </script>
